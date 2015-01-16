@@ -1,0 +1,55 @@
+Crisis 1.0.0
+- 13 January 2015
+- REQUIREMENTS FULFILLED.
+-- Feed Section.
+--- Filter and collect feeds and comments that have threat keywords.
+--- Highlights threat keywords on feeds and comments.
+-- Counter Section.
+--- Shows the page where the feed are collected from.
+--- Shows the amount of status and comments that have threat keywords.
+--- Shows keywords and the amount of mentions in the status and comments.
+-- User Interface.
+-- Created the UI for the desktop view.
+
+- UPCOMING CHANGES.
+-- Counter Section .
+--- Keywords will be sorted out from the highest amount of mention to the lowest.
+--- Keywords will be clickable to filter out feeds according to the certain keywords.
+-- User Interface.
+--- Mobile view will be created.
+
+Crisis 1.0.1
+- 16 January 2015
+- CHANGES MADE.
+-- Counter Section.
+--- Keywords sorted out from the highest amount of mention to the lowest.
+--- Keywords are clickable to filter out feeds according to the certain keywords.
+-- User Interface.
+--- Desktop view changed.
+-- Error Pages.
+--- 404 error page created.
+-- Go live.
+--- Updated this version in the server.
+-- File Name Changes.
+--- Controllers's name changed.
+---- KeywordController.php to FbKeywordController.php
+---- ThreatController.php to FbThreatController.php
+--- View's name changed.
+---- front2.blade.php to threat_main.blade.php
+-- Routing
+--- Route file changed as there are changes in file name.
+
+- UPCOMING CHANGES.
+-- User Interface.
+--- Mobile view will be created.
+--- Feed Section UI will be updated.
+-- Error Pages.
+--- Other errors pages and process will be created.
+-- Go live.
+--- public/packages/css/crisis.custom.css will be update to server. path : 
+--- app/view/layout/front2.blade.php will be update to server and threat_main.blade.php will be deleted.
+--- app/controller/FbThreatController.php will be update to server and ThreatController.php will be deleted.
+--- app/controller/FbKeywordController.php will be update to server and KeywordController.php will be deleted.
+--- Error pages and app/start/global.php will be update to server.
+-- OAuth Integration
+--- Access Token will later be needed for users to use the application.
