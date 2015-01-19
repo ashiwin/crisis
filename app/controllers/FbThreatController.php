@@ -61,6 +61,7 @@ class FbThreatController extends BaseController {
 						//feed posted by
 						$view['status_picture'][$s_t_v] = 'https://graph.facebook.com/'.$feed[$f_s_total]['from']['id'].'/picture';
 						$view['status_name'][$s_t_v] = $feed[$i]['from']['name'];
+						$view['status_date'][$s_t_v]	= date("D h:ia j M Y", strtotime($feed[$i]['created_time']));
 						//process of highlighting crisis
 						$string = preg_replace("/".$finding."/i", "<span class='red-text'>\$0</span>", $string);
 						$in_the_finding = $string;
@@ -100,6 +101,7 @@ class FbThreatController extends BaseController {
 								//comment posted by
 								$view['comment_picture'][$s_t_v][$c_t_v] = 'https://graph.facebook.com/'.$feed[$i]['comments']['data'][$c]['from']['id'].'/picture';
 								$view['comment_name'][$s_t_v][$c_t_v] = $feed[$i]['comments']['data'][$c]['from']['name'];
+								$view['comment_date'][$s_t_v][$c_t_v]	= date("D h:ia j M Y", strtotime($feed[$i]['comments']['data'][$c]['created_time']));
 								//process of highlighting crisis
 								$comment = preg_replace("/".$finding."/i", "<span class='red-text'>\$0</span>", $comment);
 								$view['comment_content'][$s_t_v][$c_t_v] = $comment;//comment content to view
