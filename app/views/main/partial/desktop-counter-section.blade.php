@@ -1,4 +1,4 @@
-<!--Other section for desktop-->	
+<!--Counter section for desktop-->	
 	<div class="col-lg-2 hidden-sm hidden-xs">
 		<div class="row">
 <!--page info section -->
@@ -66,4 +66,4 @@
 <!--/crisis counter section -->
 		</div>
 	</div>
-<!--/Other section for desktop-->
+<!--/Counter section for desktop-->
